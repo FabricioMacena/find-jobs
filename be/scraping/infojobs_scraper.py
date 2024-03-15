@@ -4,7 +4,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
 
 from time import sleep
 
@@ -82,11 +81,14 @@ def jobs(job_name, job_city):
             job_href = job.find('a').get('href')
             company_name = job.find('div', class_='text-body').text
             company_address = job.find('div', class_='small text-medium mr-24').text
+            day_posted = job.find('div', class_='text-medium small').text
 
             dict_job = {
+                'site_name': 'Infojobs',
                 'job_name': job_name.strip(),
                 'company_name': company_name.strip(),
                 'company_address': company_address.strip(),
+                'day_posted': day_posted.strip(),
                 'job_href': 'https://www.infojobs.com.br' + job_href.strip()
             }
 
