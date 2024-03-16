@@ -1,7 +1,11 @@
+import Content from "./Content";
+import { GlobalStyle } from "./globalStyles";
+
 export default function App() {
   return (
     <>
-      <h1>Front-end inicializado</h1>
+      <GlobalStyle/>
+      <Content/>
     </>
   );
 }
