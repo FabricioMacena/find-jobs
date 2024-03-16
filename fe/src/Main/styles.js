@@ -6,7 +6,6 @@ export const Container = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #90acd1;
     
     form{
         display: flex;
@@ -18,17 +17,19 @@ export const Container = styled.main`
 
 export const Input = styled.input`
     padding: 1rem;
-    width: 70vw;
+    margin-top: 1.3rem;
+    width: 30vw;
     border: none;
     outline: none;
-    border-bottom: solid #000 1px;
+    border-bottom: solid #fff 0.5px;
     margin-bottom: 1rem;
-    background-color: #cccccc10;
+    background-color: transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
 
     &::placeholder{
-        color: #fff;
+        color: #ccc;
     }
 `;
 
@@ -42,6 +43,6 @@ export const Submit = styled.input`
     margin: 2rem 0;
 
     &:hover{
-        background-color: #1b558f;
+        background-color: #123c66;
     }
 `;
