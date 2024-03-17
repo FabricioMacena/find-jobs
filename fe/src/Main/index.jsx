@@ -24,9 +24,16 @@ export default function Main(){
 
         try{
             const queryParams = new URLSearchParams(formData).toString();
-            const response = await axios.get(`http://localhost:5000/api/jobs?${queryParams}`);
             
-            navigate('jobs/', { state: { formData: formData, jobsData: response.data } });
+            const dataJob = formData;
+            setFormData({
+                jobname: '',
+                jobcity: ''
+            })
+
+            const response = await axios.get(`http://localhost:5000/api/jobs?${queryParams}`);
+
+            navigate('jobs/', { state: { dataJob: dataJob, jobsData: response.data } });
         } catch (error){
             console.log('Erro na ao fazer requisição: ', error)
         }

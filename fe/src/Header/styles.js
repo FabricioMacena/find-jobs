@@ -10,8 +10,10 @@ export const Container = styled.header`
     align-items: center;
     justify-content: center;
 
-    h1{
+    h1 a{
         font-size: 3rem;
         letter-spacing: 0.5rem;
+        text-decoration: none;
+        color: #fff;
     }
 `;
