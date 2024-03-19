@@ -73,7 +73,6 @@ def jobs(job_name, job_city):
     except Exception as e:
         print(e)
     finally:
-        print(len(jobs))
         list_job = []
 
         for job in jobs:

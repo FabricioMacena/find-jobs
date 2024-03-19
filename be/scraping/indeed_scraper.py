@@ -87,7 +87,7 @@ def jobs(job_name, job_city):
                 'site_name': 'Indeed',
                 'job_name': job_name,
                 'company_name': company_name,
-                'company_adress': company_address,
+                'company_address': company_address,
                 'day_posted': day_posted,
                 'job_href': job_href
             }
