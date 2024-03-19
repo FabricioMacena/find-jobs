@@ -13,7 +13,7 @@ Uma aplicação em **Flask** e **React** que automatiza a busca de vagas de empr
 - python app.py
 ```
 
-3. Usando outro terminal, entre na pasta 'fe' -> dê start na aplicação flask
+3. Usando outro terminal, entre na pasta 'fe' -> dê start na aplicação react:
 
 ```cmd
 - cd fe
